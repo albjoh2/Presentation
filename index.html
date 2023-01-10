@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Initiera kamera</title>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="vid">Vidvinkel</button>
+      <button class="standard">Vanlig vinkel</button>
+      <button class="tele">Teleskop</button>
+      <button class="parallel">Parallel</button>
+    </div>
+    <div class="arrows">
+      <button class="prev">Tidigare slide</button>
+      <div class="active-slide-text"><p><span class="active-slide">1</span></p></div>
+      <button class="next">Nästa slide</button>
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.144.0/build/three.module.js"
+        }
+      }
+    </script>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
